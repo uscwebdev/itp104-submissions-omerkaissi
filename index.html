@@ -12,12 +12,34 @@
             strong{
                 color: purple;
             }
+
+            .container{
+                width: 950px;
+                margin: 0 auto;
+            }
+
+            .column{
+                width: 100%;
+            }
+
+            #first-container {
+                display:flex;
+                width: 100%;
+            }
+
+
+
+            
         </style>
 
         <h1>Omer Kaissi</h1>
 
         <p><a href="mailto:kaissi@usc.edu">kaissi@usc.edu</a></p>
 
+        <hr>
+
+        <div id="first-container">
+            <div class="column">
         <p>Favorite color: <strong>Purple</strong></p>
 
         <p>Favorite website: <a href="https://kith.com">Kith Website</a></p>
@@ -25,7 +47,10 @@
         <p>Favorite activity: Gym </p>
 
         <img src="https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg?cs=srgb&dl=pexels-pixabay-260352.jpg&fm=jpg" alt="gym picture">
-
+        </div>
+    
+        
+        <div class="column">
         <h2>Fall 2023 Schedule</h2>
         <ul>
             <li>CSCI 103:Introduction to Programming</li>
@@ -34,19 +59,27 @@
             <li>ITP 104: Introduction to Web Development</li>
             <li>ECON 351: Microeconomics of Business</li>
         </ul>
+        </div>
+        </div>
 
         <hr>
 
+        <div class="second-container">
+            <div class="column">
         <h3>Assignments:</h3>
         <ul>
             <li><a href="file:///Users/omerkaissi/Desktop/GitHub/itp104-submissions-omerkaissi/assignment_01.html">Assignment 1</a></li>
             <li><a href="file:///Users/omerkaissi/Desktop/GitHub/itp104-submissions-omerkaissi/assignment_02.html">Assignment 2</a></li>
         </ul>
+    </div>
 
+        <div class="column">
         <h4>Labs:</h4>
         <ul>
             <li><a href="file:///Users/omerkaissi/Desktop/GitHub/itp104-submissions-omerkaissi/index.html">Lab 2: Student Page</a></li>
             <li><a href="file:///Users/omerkaissi/Desktop/GitHub/itp104-submissions-omerkaissi/Lab%203/lab3.html">Lab 3: Resume</a></li>
         </ul>
+        </div>
+    </div>
     </head>
 </html>  
