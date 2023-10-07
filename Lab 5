@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Minor | ITP</title>
+    <style>
+        /* ... [The provided styles remain unchanged] ... */
+
+        .form-row {
+            margin: 10px 0px;
+            display: flex;
+        }
+        .left-col {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="header">
+    <h1>ITP Web Development</h1>
+</div> <!-- #header -->
+
+<div id="main">
+    <h2>Program Overview</h2>
+
+    <img src="img/usc_logo.png" alt="USC Logo" id="usc-logo">
+
+    <!-- ... [The provided content remains unchanged] ... -->
+
+    <h2>Book Review Submission</h2>
+
+    <form action="confirmation.html">
+        <!-- Name Input -->
+        <div class="form-row">
+            <div class="left-col">
+                <label for="reviewer-name">Reviewer Name:</label>
+            </div>
+            <input type="text" id="reviewer-name" placeholder="John Doe">
+        </div>
+
+        <div class="form-row">
+            <div class="left-col">
+                Book Genre:
+            </div>
+            <label>
+                <input type="radio" name="genre">
+                Fiction
+            </label>
+            <label>
+                <input type="radio" name="genre">
+                Non-Fiction
+            </label>
+            <label>
+                <input type="radio" name="genre">
+                Biography
+            </label>
+        </div>
+
+        <div class="form-row">
+            <div class="left-col">
+                Review Type:
+            </div>
+            <label>
+                <input type="checkbox">
+                Summary
+            </label>
+            <label>
+                <input type="checkbox">
+                Analysis
+            </label>
+            <label>
+                <input type="checkbox">
+                Personal Opinion
+            </label>
+        </div>
+
+        <div class="form-row">
+            <div class="left-col">
+                <label for="rating">Rating (out of 5):</label>
+            </div>
+            <select id="rating">
+                <option>5 - Excellent</option>
+                <option>4 - Good</option>
+                <option>3 - Average</option>
+                <option>2 - Below Average</option>
+                <option>1 - Poor</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <div class="left-col">
+                <label for="detailed-review">Detailed Review:</label>
+            </div>
+            <textarea id="detailed-review" placeholder="Share your thoughts on the book..."></textarea>
+        </div>
+
+        <div class="form-row">
+            <label>
+                <input type="checkbox" required>
+                I accept the Terms & Conditions
+            </label>
+        </div>
+
+        <div class="form-row">
+            <button type="submit">Submit Review</button>
+            <button type="reset">Reset Form</button>
+        </div>
+    </form>
+
+</div> 
+
+<div id="footer">
+    University of Southern California &copy; 2018
+</div> 
+
+</body>
+</html>

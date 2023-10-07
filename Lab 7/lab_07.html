@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .puzzle {
+            display: flex;
+            flex-wrap: wrap;
+            width: 600px;
+        }
+
+        .puzzle img {
+            width: 33.33%; 
+        }
+
+        .moved {
+            position: relative;
+            box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
+        }
+
+        .moved:first-child {
+            left: 10px;
+        }
+
+        .moved:last-child {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Puzzle Game</h1>
+    <div class="puzzle">
+        <img src="https://www.bmwusa.com/content/dam/bmwusa/common/homepage/fmas/2023-06/mobile/BMW-MY24-i4-Homepage-FMA-Mobile.jpg" alt="Puzzle Piece 1" class="moved">
+        <img src="https://www.bmwusa.com/content/dam/bmwusa/common/homepage/fmas/2023-06/mobile/BMW-MY24-i4-Homepage-FMA-Mobile.jpg" alt="Puzzle Piece 2">
+        <img src="https://www.bmwusa.com/content/dam/bmwusa/common/homepage/fmas/2023-06/mobile/BMW-MY24-i4-Homepage-FMA-Mobile.jpg" alt="Puzzle Piece 3">
+        <img src="https://www.bmwusa.com/content/dam/bmwusa/common/homepage/fmas/2023-06/mobile/BMW-MY24-i4-Homepage-FMA-Mobile.jpg" alt="Puzzle Piece 4">
+        <img src="https://www.bmwusa.com/content/dam/bmwusa/common/homepage/fmas/2023-06/mobile/BMW-MY24-i4-Homepage-FMA-Mobile.jpg" alt="Puzzle Piece 5" class="moved">
+        <img src="https://www.bmwusa.com/content/dam/bmwusa/common/homepage/fmas/2023-06/mobile/BMW-MY24-i4-Homepage-FMA-Mobile.jpg" alt="Puzzle Piece 6">
+    </div>
+</body>
+</html>
