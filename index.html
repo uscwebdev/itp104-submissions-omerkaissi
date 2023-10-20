@@ -2,11 +2,12 @@
 <html>
     <head>
         <title>Omer Kaissi | Student Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <style>
             img{
-                width: auto;
-                height: 200px;
+                width: 100%;
+                height: auto;
             }
             
             strong{
@@ -28,6 +29,22 @@
                 width: 100%;
             }
 
+            @media(max-width: 767px){
+                .comtainer{
+                    width: 100%;
+                    padding: 0 10px;
+                }
+
+                .flex-container{
+                    flex-direction: column;
+                }
+
+                body{
+                    width: 100vw;
+                    margin: 0;
+                    overflow-x: hidden;
+                }
+            }
 
 
             
