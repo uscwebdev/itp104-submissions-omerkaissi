@@ -7,7 +7,6 @@
     <title>Urban Gardening - Greening the Concrete Jungle</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
-    
         body, h1, h2, p, ul, li {
             margin: 0;
             padding: 0;
@@ -28,14 +27,12 @@
             background-color: #4caf50;
             color: #fff;
             text-align: center;
-            padding: 2rem 0;
-            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+            padding: 1rem 0;
             font-size: 2rem;
         }
 
         nav ul {
             list-style-type: none;
-            overflow: hidden;
             background-color: #333;
             padding: 0.5rem;
             text-align: center;
@@ -43,13 +40,13 @@
 
         nav li {
             display: inline;
-            margin-right: 20px;
+            margin: 0 10px;
         }
 
         nav a {
             text-decoration: none;
             color: white;
-            font-size: 1.2rem;
+            font-size: 1rem;
             transition: color 0.3s;
         }
 
@@ -57,61 +54,38 @@
             color: #4caf50;
         }
 
-        section {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background-color: #fff;
-            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            transition: transform 0.3s;
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
-        section:hover {
-            transform: translateY(-5px);
+        section {
+            flex-basis: 45%;
+            margin: 1rem;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
         h2 {
-            border-bottom: 2px dashed #4caf50;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
+            border-bottom: 2px solid #4caf50;
+            padding-bottom: 0.3rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.4rem;
         }
 
         p, ul {
-            margin-bottom: 1rem;
-        }
-
-        ul {
-            list-style-type: none;
-        }
-
-        li {
-            padding: 0.5rem 0;
-            transition: color 0.3s;
-        }
-
-        li:hover {
-            color: #4caf50;
-        }
-
-        a {
-            color: #4caf50;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        a:hover {
-            color: #388e3c;
+            margin-bottom: 0.8rem;
         }
 
         img {
-            max-width: 100%;
+            max-width: 90%;
             height: auto;
             display: block;
-            margin: 0 auto 1rem auto;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 0.5rem auto;
+            border-radius: 8px;
         }
 
         footer {
@@ -119,7 +93,7 @@
             padding: 1rem;
             background-color: #333;
             color: white;
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -135,30 +109,32 @@
             <li><a href="#gallery">Gallery</a></li>
         </ul>
     </nav>
-    <section id="basics">
-        <h2>Gardening Basics</h2>
-        <p>Urban gardening starts with understanding the basics. Learn about selecting the right plants, ...</p>
-        <img src="https://images.squarespace-cdn.com/content/v1/63064607eb816a4d50027fd1/1662578923858-OXV0CWKS3X8E864CO083/image-asset.jpeg" alt="Urban Garden">
-    </section>
+    <div class="container">
+        <section id="basics">
+            <h2>Gardening Basics</h2>
+            <p>Urban gardening starts with understanding the basics. Learn about selecting the right plants, ...</p>
+            <img src="https://images.squarespace-cdn.com/content/v1/63064607eb816a4d50027fd1/1662578923858-OXV0CWKS3X8E864CO083/image-asset.jpeg" alt="Urban Garden">
+        </section>
 
-    <section id="techniques">
-        <h2>Techniques</h2>
-        <p>Explore various urban gardening techniques such as vertical gardens, container gardening, ...</p>
-        <img src="https://images.tractorgyan.com/uploads/109244/6520fcea75588-types-of-urban-farming.webp" alt="Types of Urban Gardening">
-    </section>
+        <section id="techniques">
+            <h2>Techniques</h2>
+            <p>Explore various urban gardening techniques such as vertical gardens, container gardening, ...</p>
+            <img src="https://images.tractorgyan.com/uploads/109244/6520fcea75588-types-of-urban-farming.webp" alt="Types of Urban Gardening">
+        </section>
 
-    <section id="eco-friendly">
-        <h2>Eco-Friendly Practices</h2>
-        <p>Discover how to create a sustainable and eco-friendly garden. Tips on composting, water conservation, ...</p>
-        <img src="https://static.vecteezy.com/system/resources/previews/011/468/911/non_2x/eco-friendly-icon-ecologic-food-stamp-organic-natural-healthy-food-product-label-free-vector.jpg" alt="Ecofriendly">
-    </section>
+        <section id="eco-friendly">
+            <h2>Eco-Friendly Practices</h2>
+            <p>Discover how to create a sustainable and eco-friendly garden. Tips on composting, water conservation, ...</p>
+            <img src="https://static.vecteezy.com/system/resources/previews/011/468/911/non_2x/eco-friendly-icon-ecologic-food-stamp-organic-natural-healthy-food-product-label-free-vector.jpg" alt="Eco-Friendly Practices">
+        </section>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <p>Check out our gallery of urban gardens from around the world. Get inspired and start your own urban green space.</p>
-        <img src="https://geographical.co.uk/wp-content/uploads/urbangrowth600-1.jpg" alt="Urban Gardening1">
-        <img src="https://www.iberdrola.com/documents/20125/39916/Huertos_746x419_Huerto.jpg/37eeb4fa-af04-1711-b3d7-9e749f5a1e84?t=1626678081336" alt="Urban Gardening2">
-    </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Check out our gallery of urban gardens from around the world. Get inspired and start your own urban green space.</p>
+            <img src="https://geographical.co.uk/wp-content/uploads/urbangrowth600-1.jpg" alt="Urban Gardening1">
+            <img src="https://www.iberdrola.com/documents/20125/39916/Huertos_746x419_Huerto.jpg/37eeb4fa-af04-1711-b3d7-9e749f5a1e84?t=1626678081336" alt="Urban Gardening2">
+        </section>
+    </div>
 
     <footer>
         <p>&copy; 2023 Sustainable Urban Gardening. All Rights Reserved.</p>
