@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nature Photography Gallery</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .image-container {
+            position: relative;
+            margin: 10px;
+        }
+
+        .image-container img {
+            width: 200px;
+            height: auto;
+            border: 2px solid #f5f5f5;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+        }
+
+        .caption {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .image-container:hover .caption {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="image-container">
+            <img src="https://t4.ftcdn.net/jpg/05/47/97/81/360_F_547978128_vqEEUYBr1vcAwfRAqReZXTYtyawpgLcC.jpg" alt="Image 1">
+            <div class="caption">A smooth stream flows through a mossy forest bathed in soft light.</div>
+        </div>
+
+        <div class="image-container">
+            <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=" alt="Image 2">
+            <div class="caption">The sun sets behind rolling green hills under a vibrant sky.</div>
+        </div>
+
+        <div class="image-container">
+            <img src="https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg" alt="Image 3">
+            <div class="caption">Waterfalls cascade into a tranquil lake surrounded by a verdant forest.</div>
+        </div>
+
+        <div class="image-container">
+            <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_640.jpg" alt="Image 4">
+            <div class="caption">A winding forest path is flanked by trees with autumn leaves.</div>
+        </div>
+
+        <div class="image-container">
+            <img src="https://static.wixstatic.com/media/bb1bd6_f221ad0f4d6f4103bf1d37b68b04492e~mv2.png/v1/fill/w_640,h_366,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/bb1bd6_f221ad0f4d6f4103bf1d37b68b04492e~mv2.png" alt="Image 5">
+            <div class="caption">Birds fly over the ocean at sunset where a whale breaches the surface.2</div>
+        </div>
+
+    </div>
+</body>
+</html>
